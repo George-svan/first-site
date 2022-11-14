@@ -1,5 +1,20 @@
 @import url('reset.css');
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+html, body {
+	height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.wrapper {
+    display: flex;
+	flex-flow: column nowrap;
+	height: 100%;
+}
 
 .wrapper a {
     text-decoration: none;
@@ -85,8 +100,9 @@ h2 {
 button {
     background: #FFCE38;
     border-radius: 4px;
-    width: 210px;
-    height: 60px;
+    /* width: 210px;
+    height: 60px; */
+    padding: 20px 35px;
     cursor: pointer;
     border: 0;
     font-weight: 400;
@@ -94,10 +110,11 @@ button {
     text-align: center;
     color: #020509;
     text-transform: uppercase;
+    letter-spacing: 1.2px;
 }
 
 /* about */
-.content-about {
+.content-about, .content-how {
     background: rgba(0, 207, 250, 0.05);
 }
 
@@ -132,23 +149,8 @@ button {
     margin: 0 auto;
 }
 
-.button-how {
-    background: #FFCE38;
-    border-radius: 4px;
-    width: 210px;
-    height: 60px;
-    cursor: pointer;
-    border: 0;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: #020509;
-    text-transform: uppercase;
-}
-
 .btn {
-    width: 210px;
-    margin: 0 auto;
+    text-align: center;
     padding: 69px 0;
 }
 
@@ -163,4 +165,8 @@ button {
     font-size: 18px;
     color: #FFFFFF;
     text-align: center;
+}
+
+.content-how {
+    flex-grow: 1;
 }
