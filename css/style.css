@@ -1,0 +1,166 @@
+@import url('reset.css');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap'); */
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* header */
+.header {
+    background: #020509;
+    padding: 40px 0;
+    text-transform: uppercase;
+}
+
+.list {
+    display: flex;
+    column-gap: 42px;
+}
+
+.list > li a {
+    color: #D4DDE1;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+.list > li a.active {
+    color: #FF0038;
+}
+
+.list > li a:hover {
+    color: #FF0038;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 16px;
+    letter-spacing: 8px;
+    color: #D4DDE1;
+}
+
+/* content */
+.content-design {
+    background: rgba(255, 206, 56, 0.05);
+}
+
+.box-content {
+    width: 540px;
+    padding-top: 155px;
+    padding-bottom: 180px;
+}
+
+.box-content > .box, h2 {
+    margin-bottom: 30px;
+}
+
+.box-content > h2 {
+    font-size: 48px;
+}
+
+h2 {
+    color: #020509;
+    font-weight: bold;
+}
+
+.box {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+button {
+    background: #FFCE38;
+    border-radius: 4px;
+    width: 210px;
+    height: 60px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #020509;
+    text-transform: uppercase;
+}
+
+/* about */
+.content-about {
+    background: rgba(0, 207, 250, 0.05);
+}
+
+.box-about {
+    text-align: center;
+    margin: 0 auto;
+    width: 540px;
+    font-size: 32px;
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.box-about > h2 {
+    margin-bottom: 65px;
+}
+
+/* images */
+.aside {
+    background: #020509;
+    padding: 82px 0;
+}
+
+.flex-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* how */
+.img {
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.button-how {
+    background: #FFCE38;
+    border-radius: 4px;
+    width: 210px;
+    height: 60px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #020509;
+    text-transform: uppercase;
+}
+
+.btn {
+    width: 210px;
+    margin: 0 auto;
+    padding: 69px 0;
+}
+
+/* footer */
+.footer {
+    background: #020509;
+    padding: 40px 0;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+}
