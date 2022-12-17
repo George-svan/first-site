@@ -35,6 +35,23 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* font-size */
+.fz-16 {
+    font-size: 16px;
+}
+
+.fz-18 {
+    font-size: 18px;
+}
+
+.fz-32 {
+    font-size: 32px;
+}
+
+.fz-48 {
+    font-size: 48px;
+}
+/* wrapper */
 .wrapper {
     display: flex;
 	flex-flow: column nowrap;
@@ -46,19 +63,20 @@ body {
 }
 
 .container {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .flex-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
 }
 
 /* header */
 .header {
+    max-width: 100%;
     background: #020509;
     padding: 40px 0;
     text-transform: uppercase;
@@ -66,13 +84,14 @@ body {
 
 .list {
     display: flex;
-    column-gap: 42px;
+    gap: 42px;
+    font-size: 0;
 }
 
 .list > li a {
+    display: inline-block;
     color: #D4DDE1;
     font-weight: 500;
-    font-size: 16px;
     letter-spacing: 0.1em;
 }
 
@@ -86,7 +105,6 @@ body {
 
 .logo {
     font-weight: 900;
-    font-size: 16px;
     letter-spacing: 8px;
     color: #D4DDE1;
 }
@@ -97,17 +115,13 @@ body {
 }
 
 .box-content {
-    width: 540px;
+    max-width: 540px;
     padding-top: 155px;
     padding-bottom: 180px;
 }
 
 .box-content > .box, h2 {
     margin-bottom: 30px;
-}
-
-.box-content > h2 {
-    font-size: 48px;
 }
 
 h2 {
@@ -118,7 +132,6 @@ h2 {
 .box {
     color: #727272;
     font-weight: 400;
-    font-size: 16px;
     line-height: 26px;
 }
 
@@ -129,7 +142,6 @@ button {
     cursor: pointer;
     border: 0;
     font-weight: 400;
-    font-size: 16px;
     text-align: center;
     color: #020509;
     text-transform: uppercase;
@@ -144,8 +156,7 @@ button {
 .box-about {
     text-align: center;
     margin: 0 auto;
-    width: 540px;
-    font-size: 32px;
+    max-width: 540px;
     padding-top: 85px;
     padding-bottom: 85px;
 }
@@ -168,8 +179,10 @@ button {
 /* how */
 .img {
     display: block;
-    width: 1200px;
+    max-width: 100%;
+    height: 100%;
     margin: 0 auto;
+    padding: 0 5px;
 }
 
 .btn {
@@ -185,11 +198,96 @@ button {
 
 .footer-text {
     font-weight: 400;
-    font-size: 18px;
     color: #FFFFFF;
     text-align: center;
 }
 
 .content-how {
     flex-grow: 1;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header {
+        padding: 35px 0;
+    }
+
+    .list li:nth-child(2) {
+        display: none;
+    }
+
+    .flex-images img:nth-child(6){
+        display: none;
+    }
+
+    .aside {
+        padding: 75px 0;
+    }
+
+    .footer {
+        padding: 35px 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header {
+        padding: 30px 0;
+    }
+
+    .list li:nth-child(3) {
+        display: none;
+    }
+
+    .flex-images img:nth-child(5){
+        display: none;
+    }
+
+    .aside {
+        padding: 70px 0;
+    }
+
+    .footer {
+        padding: 30px 0;
+    }
+/* font-size */
+    .fz-16 {
+        font-size: 18px;
+    }
+    
+    .fz-18 {
+        font-size: 20px;
+    }
+    
+    .fz-32 {
+        font-size: 34px;
+    }
+    
+    .fz-48 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* .container {
+        max-width: 600px;
+    } */
+}
+
+@media screen and (max-width: 640px) {
+    /* .container {
+        max-width: 500px;
+    } */
 }
